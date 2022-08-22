@@ -152,7 +152,7 @@
                         </div>
                         <button id="player-cost-button" class="button-decoration px-5 py-1 d-block m-auto mt-3">Calculate</button>
 
-                        <h5 class="text-white pt-4 text-center">Player Expenses: $ <span class="calculated-money">5000</span></h5>
+                        <h5 class="text-white pt-4 text-center">Player Expenses: $ <span id="player-cost-total" class="calculated-money">00</span></h5>
 
                         <!-- for manager -->
                         <div class="row w-75 mt-3">
@@ -160,7 +160,7 @@
                                 <label for="" class="text-white">Manager:</label>
                             </div>
                             <div class="col-lg-8">
-                                <input class="input-field " type="text">
+                                <input class="input-field" id="manager-field" type="text">
                             </div> 
                         </div>
                         <!-- For coach -->
@@ -169,11 +169,11 @@
                                 <label for="" class="text-white">Coach:</label>
                             </div>
                             <div class="col-lg-8">
-                                <input class="input-field " type="text">
+                                <input id="coach-field" class="input-field" type="text">
                             </div> 
                         </div>
-                        <button class="button-decoration px-5 py-1 d-block m-auto mt-3">Calculate Total</button>
-                        <h5 class="text-white pt-4 text-center">Total: $ <span class="calculated-money">5000</span></h5>
+                        <button id="total-calculation" class="button-decoration px-5 py-1 d-block m-auto mt-3">Calculate Total</button>
+                        <h5 class="text-white pt-4 text-center">Total: $ <span id="total-money" class="calculated-money">00</span></h5>
                       </div>
                 </div>
             </div>
