@@ -39,7 +39,7 @@
     <!-- Hero section end -->
 
     <!-- players section start  -->
-    <main class="main-section">
+    <main class="main-section pb-5">
         <!-- First section of the main section -->
         <section class="container pt-5">
             <div class="row">
@@ -138,20 +138,21 @@
                     </div>
                 </div>
 
-                <!-- Selected five section -->
+                <!-- Budget section -->
                 <div class="col-lg-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card py-3 bottom-card">
                         <h3 class="card-header text-center">Budget</h3>
                         <div class="row w-75 mt-3">
                             <div class="col-lg-4">
                                 <label for="" class="text-white">Player:</label>
                             </div>
                             <div class="col-lg-8">
-                                <input class="input-field " type="text">
+                                <input id="player-input-field" class="input-field" type="text">
                             </div> 
                         </div>
-                        <button class="button-decoration px-5 py-1 d-block m-auto mt-3">Calculate</button>
-                        <h5 class="text-white pt-4 text-center">Player Expenses: $ <span>5000</span></h5>
+                        <button id="player-cost-button" class="button-decoration px-5 py-1 d-block m-auto mt-3">Calculate</button>
+
+                        <h5 class="text-white pt-4 text-center">Player Expenses: $ <span class="calculated-money">5000</span></h5>
 
                         <!-- for manager -->
                         <div class="row w-75 mt-3">
@@ -171,12 +172,18 @@
                                 <input class="input-field " type="text">
                             </div> 
                         </div>
+                        <button class="button-decoration px-5 py-1 d-block m-auto mt-3">Calculate Total</button>
+                        <h5 class="text-white pt-4 text-center">Total: $ <span class="calculated-money">5000</span></h5>
                       </div>
                 </div>
             </div>
         </section>
-
     </main>
+    <!-- Footer section -->
+    <footer>
+        <hr>
+        <p class="text-white text-center py-5 footer-text">Copyright @ 2022 All Rights Reserve</p>
+    </footer>
 
 
 

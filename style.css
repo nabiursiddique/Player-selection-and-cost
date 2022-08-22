@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 .header-section{
     background-color: black;
 }
@@ -34,6 +31,7 @@
 .card{
     background-color: #000000;
 }
+
 .card-header{
     color: orangered;
     border-bottom: 2px solid orangered;
@@ -50,4 +48,20 @@ input{
     color: #fff;
     outline: none;
     border: 1px solid white;
+}
+
+.calculated-money{
+    color: orangered;
+}
+
+footer{
+    background-color: #151515;
+}
+
+hr{
+    margin: 1px;
+}
+
+.footer-text{
+    margin: 0;
 }
