@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-section{
+    background-color: black;
+}
+.player-image-header{
+    background-image: url(./images/path56.png);
+}
+.text-div{
+    background-color: black;
+    color: orangered;
+    text-align: center;
+}
+
+/* css for main section */
+.main-section{
+    background-color: #151515;
+}
+
+.card-body{
+    background-color: #000000;
+    color: #fff;
+}
+.button-decoration{
+    background-color: #015196;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+
+.card{
+    background-color: #000000;
+}
+.card-header{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.ordered-list li{
+    color: white;
+    margin: 10% 0;
+}
+
+/* Below card section */
+input{
+    background-color: #000000;
+    color: #fff;
+    outline: none;
+    border: 1px solid white;
+}
