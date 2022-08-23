@@ -6,22 +6,14 @@ function getInputFieldValue(idName) {
     return inputFieldValue;
 }
 
-
-
-
-
 //getting the information after clicking the submit button
 const playerArray = [];
 
 const tableBody = document.getElementById('players-list');
 
-
-
 function addToPlayer(element) {
-    // console.log(element.parentNode.children[0].innerText);
     const playerName = element.parentNode.children[0].innerText;
     playerArray.push(playerName);
-    // console.log(playerArray);
     tableBody.innerHTML = "";
     for (let i = 0; i < playerArray.length; i++) {
         if (i > 4) {
