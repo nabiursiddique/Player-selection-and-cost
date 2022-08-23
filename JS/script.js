@@ -6,6 +6,10 @@ function getInputFieldValue(idName) {
     return inputFieldValue;
 }
 
+
+
+
+
 //getting the information after clicking the submit button
 const playerArray = [];
 
@@ -20,13 +24,13 @@ function addToPlayer(element) {
     // console.log(playerArray);
     tableBody.innerHTML = "";
     for (let i = 0; i < playerArray.length; i++) {
-        if(i > 4){
+        if (i > 4) {
             alert('You cannot add more than five player');
             break;
         }
         const tr = document.createElement('tr');
         tr.innerHTML = `
-        <td>${i+1}</td>
+        <td>${i + 1}</td>
         <td>${playerArray[i]}</td>
         `;
         tableBody.appendChild(tr);
@@ -40,10 +44,14 @@ function addToPlayer(element) {
 document.getElementById('player-cost-button').addEventListener('click', function () {
     //Getting the value of input field from player cost
     const playerCost = getInputFieldValue('player-input-field');
+    if (playerArray.length <= 5) {
+        const playerCostTotal = playerCost * playerArray.length;
+        let totalPlayerCost = document.getElementById('player-cost-total');
+        console.log(playerCostTotal);
+        totalPlayerCost.innerText = playerCostTotal;
+    }
 
-    const playerCostTotal = playerCost * playerArray.length;
-    let totalPlayerCost = document.getElementById('player-cost-total');
-    totalPlayerCost.innerText = playerCostTotal;
+
 });
 
 //Manager and coach cost and player cost total
