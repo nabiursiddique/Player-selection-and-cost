@@ -47,7 +47,10 @@ document.getElementById('player-cost-button').addEventListener('click', function
     if (playerArray.length <= 5) {
         const playerCostTotal = playerCost * playerArray.length;
         let totalPlayerCost = document.getElementById('player-cost-total');
-        console.log(playerCostTotal);
+        totalPlayerCost.innerText = playerCostTotal;
+    }else{
+        const playerCostTotal = playerCost * 5;
+        let totalPlayerCost = document.getElementById('player-cost-total');
         totalPlayerCost.innerText = playerCostTotal;
     }
 
