@@ -30,7 +30,6 @@ function addToPlayer(element) {
         <td>${playerArray[i]}</td>
         `;
         tableBody.appendChild(tr);
-        
     }
 }
 
